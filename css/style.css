@@ -6,6 +6,7 @@ header {
 main {
     height: calc(100vh - 50px);
     display: flex;
+    overflow-y: auto;
 }
     
 main > aside {
