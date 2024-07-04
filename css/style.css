@@ -21,3 +21,10 @@ main > section {
     overflow-y: auto;
 }
 
+
+
+/* MAIN */
+
+main .card {
+    margin: 20px 0;
+}
