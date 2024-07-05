@@ -26,13 +26,9 @@ main > section {
     width: 45px;
 }
 
-.my-btn {
-    background-color:rgba(0, 0, 0, 0.3);
-    border-radius: 30px;
-    padding: 0 10px;
+.my-bg-darktransparent {
+    background-color:rgba(0, 0, 0, 0.2);
     text-decoration: none;
-    list-style: none;
-    color: white;
 }
 
 
@@ -47,6 +43,28 @@ main > section {
 main .card {
     margin: 20px 0;
 }
+
+.table img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.my-action-btn {
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 0 2px;
+}
+
+.my-action-btn i {
+    color: grey;
+}
+
+.my-action-btn:hover {
+    background-color: lightgray;
+}
+
 
 /* ASIDE */
 
