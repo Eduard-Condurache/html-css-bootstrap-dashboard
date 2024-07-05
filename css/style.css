@@ -1,4 +1,6 @@
 
+/* GENERAL */
+
 header {
     height: 60px;
 }
@@ -22,15 +24,11 @@ main > section {
     overflow-y: auto;
 }
 
+/* HEADER */
+
 #small-logo {
     width: 45px;
 }
-
-.my-bg-darktransparent {
-    background-color:rgba(0, 0, 0, 0.2);
-    text-decoration: none;
-}
-
 
 /* COLORS */
 
@@ -38,15 +36,15 @@ main > section {
     background-color: #E5E5E5;
 }
 
+.my-bg-darktransparent {
+    background-color:rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+
 /* MAIN */
 
 main .card {
     margin: 20px 0;
-}
-
-.table img {
-    width: 30px;
-    border-radius: 50%;
 }
 
 .my-action-btn {
@@ -65,9 +63,22 @@ main .card {
     background-color: lightgray;
 }
 
+/* Main table */
+
+.table img {
+    width: 30px;
+    border-radius: 50%;
+}
+
+table tr td:nth-child(1) {
+    width: 60%;
+}
+
+tr > td:not(:first-child) {
+    text-align: center;
+}
 
 /* ASIDE */
-
 
 main aside {
     background-image: url(../img/sidebar-bg.png);
@@ -86,10 +97,16 @@ aside ul > li:hover {
     background-color: gray;
 }
 
-
 /* RESPONSIVE */
 
-@media (max-width: 992px) {
+@media screen and (max-width:768px) {
+    table tr td:nth-child(2),
+    table tr td:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 992px) {
     main > aside {
         width: calc(150px / 2);;
     }
@@ -97,5 +114,17 @@ aside ul > li:hover {
     main > section {
         width: calc(100% - (150px / 2));
     }
+
+    table tr td:nth-child(1) {
+        width: 35%;
+    }
   }
+
+@media screen and (max-width: 1200px)  {
+    main section .canvas-res {
+        min-width: 100%;
+    }
+}
+
+  
 
