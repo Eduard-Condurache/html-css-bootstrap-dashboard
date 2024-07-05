@@ -15,19 +15,27 @@ main {
     
 main > aside {
     width: 150px;
-    background-color: black;
-    color: white;
 }
     
 main > section {
     width: calc(100% - 150px);
-    background-color:#141922;
     overflow-y: auto;
 }
 
 #small-logo {
     width: 45px;
 }
+
+.my-btn {
+    background-color:rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    padding: 0 10px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+
 /* COLORS */
 
 .my-bg-lightgrey {
@@ -43,13 +51,21 @@ main .card {
 /* ASIDE */
 
 
-main aside ul li > a,
-main aside .admin a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 10px;
-    font-size: 1.2rem;
+main aside {
+    background-image: url(../img/sidebar-bg.png);
+    background-color: #051E34;
+}
+
+aside ul li {
+    font-size: 1.1rem;
+}
+
+aside #stats-icon {
+    margin-left: 5px;
+}
+
+aside ul > li:hover {
+    background-color: gray;
 }
 
 
@@ -64,3 +80,4 @@ main aside .admin a {
         width: calc(100% - (150px / 2));
     }
   }
+

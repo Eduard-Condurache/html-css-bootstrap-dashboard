@@ -25,22 +25,31 @@
             <nav class="navbar bg-body-tertiary h-100">
                 <div class="container-fluid p-0">
                     <div class="row w-100 d-flex align-items-center bg-white mx-auto">
+                        
                         <div class="col-auto pe-4 d-none d-lg-flex">
                             <img src="img/logo.svg" alt="Logo">
                         </div>
+
                         <div class="col-auto d-flex d-lg-none mx-auto">
                             <img src="img/mobile-logo.png" alt="Small-logo" id="small-logo">
                         </div>
-                        <div class="col auto">
-                            <form role="search">
-                                <i class="fa-solid fa-magnifying-glass position-absolute p-2"></i>
+
+                        <div class="col">
+                            <form class="container-fluid">
+                                <div class="input-group">
+                                <span class="input-group-text my-bg-lightgrey" id="basic-addon1">
+                                    <i class="bi bi-search"></i>
+                                </span>
                                 <input 
-                                    class="form-control px-5 my-bg-lightgrey" 
-                                    type="search" 
-                                    placeholder="Prova a cercare: Lezioni di Laravel" 
-                                    aria-label="Search">
+                                    type="text" 
+                                    class="form-control border border-start-0 my-bg-lightgrey" 
+                                    placeholder="Prova a cercare:Lezioni di Laravel" 
+                                    aria-label="Username" 
+                                    aria-describedby="basic-addon1">
+                                </div>
                             </form>
                         </div>
+
                         <div class="col-auto bg-white p-0 m-0 d-flex">
                             <button type="button" class="btn btn-first d-none d-lg-block">
                                 <i class="bi bi-list-ul"></i>
@@ -63,6 +72,7 @@
                                 </ul>
                             </div>
                         </div>
+
                     </div>
                 </div>
               </nav>
@@ -73,54 +83,69 @@
         <main>
 
             <aside class="h-100 d-flex py-5">
-                <div class="container-fluid d-flex flex-column">
+                <div class="container-fluid d-flex flex-column justify-content-spacebetween align-items-center">
 
                     <ul class="list-unstyled mb-auto">
                         
-                        <li>
-                            <a href="" class="text-decoration-none text-white">
-                                <i class="bi bi-house-fill"></i>
-                                <span class="d-none d-lg-block ps-3">Home</span>
+                        <li class="p-2">
+                            <a href="" class="text-decoration-none text-white d-lg-flex align-items-center">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="px-3 d-none d-lg-flex">Home</span>
                             </a>
                         </li>
 
-                        <li>
-                            <a href="" class="text-decoration-none text-white">
-                                <i class="bi bi-bar-chart-fill"></i>
-                                <span class="d-none d-lg-flex ps-3">Cerca</span>
+                        <li class="p-2">
+                            <a href="" class="text-decoration-none text-white d-lg-flex align-items-center">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span class="px-3 d-none d-lg-flex" id="stats-icon">Stats</span>
                             </a>
                         </li>
 
-                        <li>
-                            <a href="" class="text-decoration-none text-white">
-                                <i class="bi bi-gear-fill"></i>
-                                <span class="d-none d-lg-block ps-3">Cerca</span>
+                        <li class="p-2">
+                            <a href="" class="text-decoration-none text-white d-lg-flex align-items-center">
+                                <i class="fa-solid fa-signal"></i>
+                                <span class="px-3 d-none d-lg-flex">Signal</span>
                             </a>
                         </li>
                     </ul>
 
-                    <div class="admin">
-                        <a href="" class="text-decoration-none text-white">
-                            <i class="bi bi-bell-fill"></i>
-                            <span class="d-none d-lg-block ps-3">Admin</span>
-                        </a>
-                    </div>
+                    <ul class="list-unstyled">
+                        <li class="p-2">
+                            <a href="" class="text-decoration-none text-white d-lg-flex align-items-center">
+                                <i class="fa-solid fa-gear"></i>
+                                <span class="px-3 d-none d-lg-flex">Admin</span>
+                            </a>
+                        </li>
+                    </ul>
 
                 </div>             
             </aside>
 
             <section class="bg-light">
                 <div class="container-fluid">
-                    <div class="row bg-primary">
+                    <div class="row bg-primary bg-gradient text-white d-flex py-4">
                         <div class="col-6">
-                            <h2>Boolean</h2>
+                            <div class="d-flex align-items-center">
+                                <h2>Boolean</h2>
+                                <a href="" class="my-btn ms-1">Piano blaze</a>
+                            </div>
+                            <div class="d-flex align-items-center flex-wrap">
+                                <a href="" class="my-btn">3 app</a>
+                                <i class="fa-solid fa-angles-right ms-2"></i>
+                                <a href="" class="my-btn ms-1">Boolean mobile app</a>
+                                <a href="" class="my-btn ms-1">Boolean web app</a>
+                                <a href="" class="my-btn ms-1">Boolean blog app</a>
+                            </div>
                         </div>
                         <div class="col-4">
-                            <h1 class="fs-4">Studenti online negli ultimi 30 minuti</h1>
-                            <h2 class="fs-1">125</h2>
+                            <span>Studenti online negli ultimi 30 minuti</span>
+                            <h2 class="fs-2">125</h2>
                         </div>
-                        <div class="col-2">
-                            <h2 class="fs-4">Nuovo Studente</h2>
+                        <div class="col-2 d-block">
+                            <span>Nuovo Studente</span>
+                            <button type="button" class="btn btn-outline-light ms-3">
+                                <i class="bi bi-plus-lg"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
